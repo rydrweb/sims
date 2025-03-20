@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rydrweb</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #121212;
+            color: white;
+        }
+
+        body {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            --s: 37px;
+            /* control the size */
+
+            --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
+            --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+            --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+            --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+            background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+                var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+                var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+            background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            margin-top: 100px;
+        }
+
+        .content {
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .content a {
+            padding: 0.8em 2em 0.8em 2.5em;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 15px;
+            color: #f6fff6;
+            letter-spacing: 0.3em;
+            text-shadow: -2px 2px 5px #33fd30;
+            background-color: transparent;
+            border: 2px solid #bbfeb1;
+            box-shadow: 0 0 0px 1px #42f112,
+                0 0 10px 2px #33fd30,
+                inset 0 0 0px 1px #42f112,
+                inset 0 0 10px 2px #33fd30;
+            transition: 100ms;
+        }
+
+        .content a:hover {
+            box-shadow: 0 0 0px 1px #42f112,
+                0 0 10px 2px #33fd30,
+                inset 0 0 0px 1px #42f112,
+                inset 0 0 30px 2px #33fd30;
+            text-shadow: 0 0 10px #33fd30;
+            transform: translateY(-5px);
+        }
+
+        .content2 {
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .content2 a {
+            padding: 0.8em 2em 0.8em 2.5em;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 15px;
+            color: #f6fff6;
+            letter-spacing: 0.3em;
+            text-shadow: -2px 2px 5px #30b2fd;
+            background-color: transparent;
+            border: 2px solid #57d8f5;
+            box-shadow: 0 0 0px 1px #30b2fd,
+                0 0 10px 2px #30d7fd,
+                inset 0 0 0px 1px #30b2fd,
+                inset 0 0 10px 2px #30b2fd;
+            transition: 100ms;
+        }
+
+        .content2 a:hover {
+            box-shadow: 0 0 0px 1px #30b2fd,
+                0 0 10px 2px #30d7fd,
+                inset 0 0 0px 1px #30b2fd,
+                inset 0 0 30px 2px #30d7fd;
+            text-shadow: 0 0 10px #30d7fd;
+            transform: translateY(-5px);
+        }
+
+        .navbar a {
+            padding: 0.8em 2em 0.8em 2.5em;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 15px;
+            color: #f6fff6;
+            letter-spacing: 0.3em;
+            text-shadow: -2px 2px 5px #b734dc;
+            background-color: transparent;
+            border: 2px solid #e17bfe;
+            box-shadow: 0 0 0px 1px #d952fe,
+                0 0 10px 2px #b734dc,
+                inset 0 0 0px 1px #d952fe,
+                inset 0 0 10px 2px #b734dc;
+            transition: 100ms;
+        }
+
+        .navbar a:hover {
+            box-shadow: 0 0 0px 1px #d952fe,
+                0 0 10px 2px #b734dc,
+                inset 0 0 0px 1px #d952fe,
+                inset 0 0 30px 2px #b734dc;
+            text-shadow: 0 0 10px #b734dc;
+            transform: translateY(-5px);
+        }
+
+        .navbar {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="https://rydrweb.github.io/hidden" style="margin-left: 10px;">Hide This Tab</a>
+        <a href="https://rydrweb.github.io/notes" style="margin-left: 10px;">Patch Notes</a>
+        <a href="https://rydrweb.github.io/account" style="margin-left: 10px;">Account</a>
+        <a href="https://rydrweb.github.io/suggest" style="margin-left: 10px;">Suggest</a>
+    </div>
+    <h1>rydrweb v1.2</h1>
+    <div class="content2">
+        <a href="https://rydrweb.github.io/Sports">Sports</a>
+        <a href="https://rydrweb.github.io/Racing">Racing</a>
+        <a href="https://rydrweb.github.io/sims">Simulations</a>
+        <a href="https://rydrweb.github.io/Misc">Misc</a>
+    </div>
+    <div class="content">
+        <a href="https://rydrweb.github.io/territorial">Territorial</a>
+        <a href="https://rydrweb.github.io/cookieclicker">Cookie Clicker</a>
+        <a href="https://rydrweb.github.io/bitlife">Bitlife</a>
+        <a href="https://rydrweb.github.io/push-your-luck">Push Your Luck</a>
+    </div>
+    <div class="content">
+        <a href="https://rydrweb.github.io/monkeymart">Monkey Mart</a>
+    </div>
+</body>
+
+</html>
